@@ -19,3 +19,14 @@
     font-size: 36px;
     color: white;
 }
+
+.hero {
+    background-image: url(/images/Yellow-Journalism-Index-Header.jpg);
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 2.5rem;
+}
