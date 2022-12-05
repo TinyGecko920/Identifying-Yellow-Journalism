@@ -33,10 +33,26 @@
 h2 {
     text-align: center;
     margin: 3vw;
+    font-size: 3em;
 }
-.one > div > p{
+.one,
+.two,
+.three > div > p{
     margin: 3vw;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-.two > div > p{
-    margin: 3vw;
+
+p {
+    font-size: 1.4em;
 }
+
+[class^="image"] {
+    max-width: 20vw;
+}
+
+.one-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
