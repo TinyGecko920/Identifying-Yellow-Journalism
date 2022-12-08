@@ -69,6 +69,7 @@ div[class*="hero"] {
 
 p {
     font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 [class^="image"] {
@@ -89,4 +90,51 @@ p {
 .one-flex > div > img {
     width: 35vw;
     padding-top: 5vh;
+}
+
+footer {
+    padding: 3vh 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkgray;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer div {
+    width: 20%;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding-left: 0;
+    margin: 5%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    margin: 5vh 25vw;
+    height: 25vh;
+    background: url(images/Yellow-Journalism-More-Header.jpg) center;
+}
+
+.button a {
+    font-size: 1.5rem
 }
