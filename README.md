@@ -1,2 +1,5 @@
 # Project-2
-Project 2 for CART on social issues, "identifying yellow journalism."
+Project for CART 'Web App Dev' on social issues, "identifying yellow journalism."
+
+The site can be viewed on Netlify at;
+__*https://yellowjournalism.netlify.app*__
