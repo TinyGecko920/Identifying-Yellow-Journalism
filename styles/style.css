@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
-/* Test */
-
 /* Content overflowing on x-axis hidden */
-body { overflow-x: hidden; }
+body {
+    overflow-x: hidden;
+    background-color: #f1eae3;
+    background-image: url(/images/textures/exclusive-paper.png);
+}
 
 p {
     font-size: 1.35rem;
@@ -15,7 +17,7 @@ p {
 }
 
 h1 {
-    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    text-shadow: 8px 8px 8px #000000; 
     font-size: 6rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -35,6 +37,7 @@ h2 {
     width: 100%;
     height: 10vh;
     background: rgba(0, 0, 0, 0.5);
+    background-image: url(/images/textures/low-contrast-linen.png);
     position: fixed;
 }
 
@@ -46,8 +49,8 @@ h2 {
 }
 
 /* Hero Images */
-.hero-1 { background-image: url(/images/hero-index.jpg); }
-.hero-2 { background-image: url(/images/hero-more.jpg); }
+.hero-1 { background-image: url(/images/heroes/hero-index.jpg); }
+.hero-2 { background-image: url(/images/heroes/hero-more.jpg); }
 
 div[class*="hero"] {
     width: 100vw;
@@ -72,10 +75,17 @@ div[class*="hero"] {
     justify-content: center;
     align-items: center;
     margin-bottom: 10vh;
+    background-image: url(/images/textures/soft-wallpaper.png);
+    box-shadow: 10px 10px 10px #777777 ;
+}
+
+.content > div[class*="text-container"] {
+    padding: 2vw;
+    background-color: #ffffff;
 }
 
 .content > div > img {
-    width: 35vw;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -94,7 +104,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #3f3f3f;
+    background-color: #353535;
+    background-image: url(/images/textures/low-contrast-linen.png);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -190,7 +201,6 @@ footer a {
 
 @media only screen and (max-width: 780px) {
     h1 {
-        -webkit-text-stroke: 2px rgb(0, 0, 0);
         font-size: 4rem; 
     }
     h2 {
@@ -233,7 +243,6 @@ footer a {
 
 @media only screen and (max-width: 420px) {
     h1 {
-        -webkit-text-stroke: 1.5px rgb(0, 0, 0);
         font-size: 2.2rem; 
     }
     h2 {
