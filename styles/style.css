@@ -17,9 +17,9 @@ p {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-family: 'Ultra', serif;
-    text-shadow: 8px 8px 8px #000000;
+    text-shadow: 0px 10px 10px black;
     padding: 16px;
     font-weight: lighter;
 }
@@ -52,8 +52,7 @@ h2 {
     font-family: 'Bebas Neue', cursive;
 }
 
-.navbar a:hover,
-.navbar a:focus {
+.navbar a:hover {
     color: yellow;
 }
 
@@ -67,9 +66,17 @@ div[class*="hero"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
     background-size: cover;
     box-shadow: 0 5px 5px #ada7a1;
+}
+
+div[class*="hero"] p {
+    font-size: 1.5rem;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    text-shadow: 0px 2px 2px black;
 }
 
 .content {
@@ -98,6 +105,17 @@ div[class*="hero"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.content div a {
+    color: blue;
+    text-decoration: none;
+}
+
+.content div a:hover,
+.content div a:focus {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Order the imgs on opposite sites. */
@@ -171,13 +189,18 @@ footer a {
     color: rgb(250, 250, 250);
     margin-top: 27vh;
 }
-
 @media only screen and (max-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
     h2 {
         font-size: 1.8rem;
     }
     p {
         font-size: 1rem;
+    }
+    div[class*="hero"] p {
+        font-size: 1.2rem;
     }
     .content {
         padding: 10vh 5vw 2.5vh 5vw;
@@ -186,7 +209,7 @@ footer a {
 
 @media only screen and (max-width: 1000px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     h2 {
         font-size: 1.5rem;
@@ -194,6 +217,9 @@ footer a {
     }
     p {
         font-size: 0.8rem;
+    }
+    div[class*="hero"] p {
+        font-size: 1rem;
     }
     .navbar {
         height: 8vh;
@@ -215,13 +241,19 @@ footer a {
 
 @media only screen and (max-width: 780px) {
     h1 {
-        font-size: 2.5rem; 
+        font-size: 2.2rem; 
     }
     p {
         font-size: 1rem;
     }
     div[class*="hero"] {
         height: 50vh;
+    }
+    div[class*="hero"] p {
+        font-size: 0.8rem;
+    }
+    .navbar a {
+        font-size: 1.5rem;
     }
     .content {
         padding: 7vh 10vw 0 10vw;
@@ -254,13 +286,19 @@ footer a {
 
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     h2 {
         margin: 1vh 0;
     }
+    .navbar a {
+        font-size: 1.2rem;
+    }
     div[class*="hero"] {
         height: 30vh;
+    }
+    div[class*="hero"] p {
+        font-size: 0.6rem;
     }
 }
 
@@ -279,6 +317,9 @@ footer a {
         height: 5vh;
     }
     .navbar a {
-        font-size: 1.2rem;
+        font-size: 0.7rem;
+    }
+    div[class*="hero"] p {
+        font-size: 0.4rem;
     }
 }
