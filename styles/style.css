@@ -25,9 +25,10 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 3vh;
-    font-size: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 2vh;
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
 }
 
 .navbar {
@@ -37,19 +38,18 @@ h2 {
     justify-content: space-between;
     padding: 0 5vw;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     background-color: #383634;
     background-image: url(/images/textures/low-contrast-linen.png);
     position: relative;
-    box-shadow: 0 20px 20px #292827;
+    box-shadow: 0 10px 10px #292827;
 }
 
 .navbar a {
     text-decoration: none;
-    font-size: 4vh;
+    font-size: 3rem;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .navbar a:hover,
@@ -174,7 +174,7 @@ footer a {
 
 @media only screen and (max-width: 1200px) {
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     p {
         font-size: 1rem;
@@ -189,15 +189,17 @@ footer a {
         font-size: 3rem;
     }
     h2 {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        margin-bottom: 1vh;
+    }
     p {
         font-size: 0.8rem;
     }
     .navbar {
-        height: 7vh;
+        height: 8vh;
     }
     .navbar a {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     div[class*="hero"] {
         height: 50vh;
@@ -214,9 +216,6 @@ footer a {
 @media only screen and (max-width: 780px) {
     h1 {
         font-size: 2.5rem; 
-    }
-    h2 {
-        font-size: 2rem;
     }
     p {
         font-size: 1rem;
@@ -258,8 +257,7 @@ footer a {
         font-size: 2rem;
     }
     h2 {
-        font-size: 1.7rem;
-        margin-bottom: 2vh;
+        margin: 1vh 0;
     }
     div[class*="hero"] {
         height: 30vh;
@@ -278,6 +276,7 @@ footer a {
     }
     .navbar {
         padding: 0 10vw;
+        height: 5vh;
     }
     .navbar a {
         font-size: 1.2rem;
